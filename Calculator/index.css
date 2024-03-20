@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+body h2 {
+    margin-top: 50px;
+}
+
+main {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    background-color: gray;
+    border: 3px solid gray;
+    border-radius: 3px;
+    box-shadow: 5px 3px gainsboro;
+    padding: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px 5px; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin 0px 5px;
+}
+
+.col button {
+    margin: 5px 5px;
+    width: 25%;
+    height: 50px;
+    font-size: 1.1em;
+}
