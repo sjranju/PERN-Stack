@@ -1,0 +1,57 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 100px;
+}
+
+#main #heading {
+    margin: auto;
+}
+
+#colors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#colors h2 {
+    justify-content: flex-start;
+}
+
+
+.colorNames {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pink {
+    background-color: #D088C4;
+}
+
+#red {
+    background-color: #F41A1A;
+}
+
+#green {
+    background-color: #3EA72F;
+}
+
+#blue {
+    background-color: #5469DD;
+}
+
+#orange {
+    background-color: #F79F17;
+}
+
+#pink,
+#orange,
+#green,
+#red,
+#blue {
+    padding: 25px 40px;
+    border-radius: 5px;
+}
