@@ -49,6 +49,7 @@ nav .navlist {
 
 #joinUsButton {
     display: none;
+    /* visibility: hidden; */
 }
 
 main {
@@ -58,6 +59,7 @@ main {
 
 #banner {
     margin-bottom: 64px;
+    position: relative;
 }
 
 #banner img {
@@ -195,21 +197,8 @@ footer {
 
 @media only screen and (min-width:760px) and (max-width:980px) {
 
-    nav {
-        grid-template-columns: 30% 1fr 1fr 1fr 1fr;
-    }
-
-    #joinUs {
-        display: none;
-    }
-
-    #joinUsButton {
-        visibility: visible;
-        background-color: #5E6452;
-        justify-self: center;
-        padding: 5px 10px;
-        border-radius: 5px;
-        color: white;
+    #largeScreen {
+        grid-template-columns: 50% 1fr 1fr 1fr 1fr;
     }
 
     .card {
@@ -217,40 +206,53 @@ footer {
         width: 400px;
     }
 
+    #banner {
+        position: relative;
+    }
+
+    #formatCamera {
+        display: block;
+        opacity: 0.9;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+        text-align: center;
+        padding: 10px;
+        font-family: "Roboto Mono";
+    }
+
     #formatCamera h1 {
-        text-transform: uppercase;
-        margin-bottom: 0;
-        padding-bottom: 0;
         color: white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
     }
 
     #formatCamera h2 {
+        color: white;
         font-style: oblique;
         font-family: "Dancing Script", cursive;
         font-weight: bolder;
-        font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 0;
+        font-size: 6rem;
+        margin: 0;
+        padding-top: 0;
     }
 }
 
 @media only screen and (max-width:760px) {
 
-    nav {
-        grid-template-columns: 30% 1fr 1fr 1fr 1fr;
-    }
-
-    #joinUs {
+    #largeScreen {
         display: none;
     }
 
-    #joinUsButton {
-        display: block;
-        background-color: #5E6452;
-        justify-self: center;
-        padding: 5px 10px;
-        border-radius: 5px;
-        color: white;
+    #mobileDevice {
+        height: 85px;
+        display: grid;
+        grid-template-columns: 40% 1fr 1fr 1fr 1fr;
+        align-content: center;
+        color: #4A4A4A;
     }
 
     .card {
@@ -263,16 +265,38 @@ footer {
         flex-direction: column;
     }
 
-    #largeScreen {
-        display: none;
+    #banner {
+        position: relative;
     }
 
-    #mobileDevice {
-        height: 85px;
-        display: grid;
-        grid-template-columns: 70% 1fr 1fr 1fr;
-        align-content: center;
-        color: #4A4A4A;
+    #formatCamera {
+        display: block;
+        opacity: 0.9;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+        text-align: center;
+        padding: 10px;
+        font-family: "Roboto Mono";
+    }
+
+    #formatCamera h1 {
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        font-size: 2.2rem;
+    }
+
+    #formatCamera h2 {
+        color: white;
+        font-style: oblique;
+        font-family: "Dancing Script", cursive;
+        font-weight: bolder;
+        font-size: 4.4rem;
+        margin: 0;
+        padding-top: 0;
     }
 
     #companyLogo {
@@ -281,19 +305,31 @@ footer {
         justify-self: left;
     }
 
-    #formatCamera h1 {
-        text-transform: uppercase;
-        margin-bottom: 0;
-        padding-bottom: 0;
+}
+
+@media only screen and (max-width:980px) {
+    #joinUs {
+        display: none;
+    }
+
+    #joinUsButton {
+        display: block;
+        background-color: #5E6452;
+        justify-self: center;
+        padding: 4px 8px;
+        border-radius: 5px;
         color: white;
     }
 
-    #formatCamera h2 {
-        font-style: oblique;
-        font-family: "Dancing Script", cursive;
-        font-weight: bolder;
-        font-size: 2rem;
-        margin-top: 0;
-        margin-bottom: 0;
+    footer {
+        font-size: 0.7rem;
+    }
+
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    article {
+        font-size: 1.5rem;
     }
 }
